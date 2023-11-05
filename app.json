@@ -1,6 +1,6 @@
 {
-  "name": "Adarsh-",
-  "description": "A Pyrogram Telegram bot to Stream Telegram files to web.",
+  "name": "Joaq",
+  "description": "Un bot para transmitir archivos de Telegram a la web.",
   "keywords": [
       "telegram",
       "stream",
@@ -13,10 +13,10 @@
       "media",
       "bot"
     ],
-  "repository": "https://github.com/LazyDeveloperr/Lazy-Streamer-BOT",
+  "repository": "https://github.com/joaq13/LBR",
   "success_url": "/",
-  "logo": "https://telegra.ph/file/f2c253c5b0b747042cf4c.png",
-  "website": "http://t.me/LazyDeveloper",
+  "logo": "https://telegra.ph/file/4ff9b5c27bea53be24fbd.jpg",
+  "website": "",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
