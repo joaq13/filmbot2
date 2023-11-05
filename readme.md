@@ -1,38 +1,31 @@
 <h1 align="center"></h1>
 <p align="center"> 
-  <img src="https://telegra.ph/file/f2c253c5b0b747042cf4c.png" alt="Lazy Streamer LOGO" width="650">
+  <img src="https://telegra.ph/file/4ff9b5c27bea53be24fbd.jpg" alt="LBR LOGO" width="650">
   </a>
   
  <p align="center">
-    A Telegram bot to turn all media and documents files to instant direct download and stream link .
+    Un bot para transmitir archivos de Telegram a la web.
     <br />
    </strong></a>
     <br />
-    <a href="https://github.com/LazyDeveloperr/Lazy-Streamer-BOT/issues">Report a Bug</a>
-    |
-    <a href="https://github.com/LazyDeveloperr/Lazy-Streamer-BOT/issues">Request Feature</a>
+
   </p>
 
 
 <hr>
 
-## Please Follow me so you know whenever I release a new Project!❤️‍🔥
-### Incase you are having trouble deploying bot you may hire developer we have reasonable rates [click here](https://t.me/LazyPrincessSupport)
 
-## 🍁 About This Bot :
 
 ![streamingfilestreambot-professional-live_1](https://user-images.githubusercontent.com/88939380/137127129-a86fc939-2931-4c66-b6f6-b57711a9eab7.png)
 
 </p>
 <p align='center'>
-    This bot will give you stream links for Telegram files without the need of waiting till the download completes
+    Este bot le brindará enlaces de transmisión para archivos de Telegram sin necesidad de esperar hasta que se complete la descarga.
 </p>
 
 
-## ♢ How to make your own :
+## ♢ Cómo hacer el tuyo propio:
 
-
-#### ♢ Click on This Drop-down and get more details
 <br>
 <details>
   <summary><b>Deploy on Heroku:</b></summary>
@@ -155,14 +148,11 @@ DATABASE_URL=mongodb_uri
 `/start` : To check if the bot is alive or not.
 
 To get an instant stream link, just forward any media to the bot and boom, its fast af.
-  
-![image](https://user-images.githubusercontent.com/88939380/145798095-3cdad108-96b0-4391-a540-cad144d6b864.png)
 
 
-### Channel Support
-Bot also Supported with Channels. Just add bot Channel as Admin. If any new file comes in Channel it will edit it with **Get Download Link** Button. </details>
 
 ### Credits : 
-- ❤️ Thank You sir [LazyDeveloper](https://github.com/LazyDeveloperr) for helping us in this journey. ❤️
-- [Adarsh-Goel](https://github.com/adarsh-goel)
-- And Everyone In This Journey !
+- Gracias Señor 
+- [Adarsh-Goel]
+- ¡Y todos en este viaje!
+
