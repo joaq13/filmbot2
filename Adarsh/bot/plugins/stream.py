@@ -99,13 +99,13 @@ async def private_receive_handler(c: Client, m: Message):
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
        
-        msg_text ="""<i><u>Link Generado !</u></i>\n\n<b>📂 ARCHIVO :</b> <i>«{}«</i>\n\n<b>📦 TAMAÑO :</b> <i>{}</i>\n\n<b>📥 DESCARGA :</b> <i>{}</i>\n\n<b>🖥 ONLINE (Navegador) :</b> <i>{}</i>\n\n<b>🚸 NOTA : PARA ABRIR CON REPRODUCTOR ELEGIR ENLACE DE DESCARGA, (VLC,MxPlater...)</b>"""
+        msg_text ="""<i><u>Link Generado !</u></i>\n\n<b>📂 ARCHIVO :</b> «<i>{}</i>«\n\n<b>📦 TAMAÑO :</b> <i>{}</i>\n\n<b>📥 DESCARGA :</b> <i>{}</i>\n\n<b>🖥 ONLINE (Navegador) :</b> <i>{}</i>\n\n<b>🚸 NOTA : PARA ABRIR CON REPRODUCTOR ELEGIR ENLACE DE DESCARGA, (VLC,MxPlater...)</b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True,  quote=True)
         await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
-            disable_web_page_preview=False,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ONLINE 🖥", url=stream_link), #Stream Link
                                                 InlineKeyboardButton('DESCARGA 📥', url=online_link)]]) #Download Link
         )
@@ -144,8 +144,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("🖥STREAM ", url=stream_link),
-                     InlineKeyboardButton('Dᴏᴡɴʟᴏᴀᴅ📥', url=online_link)] 
+                    [InlineKeyboardButton("🖥ONLINE (Navegador)", url=stream_link),
+                     InlineKeyboardButton('DESCARGA📥', url=online_link)] 
                 ]
             )
         )
