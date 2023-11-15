@@ -144,7 +144,7 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("🖥ONLINE (Navegador)", url=f"http://ouo.io/qs/Ckivdltb?s={stream_link}"
+                    [InlineKeyboardButton("🖥ONLINE (Navegador)", url=f"http://ouo.io/qs/Ckivdltb?s={Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
                      InlineKeyboardButton('DESCARGA📥', url=online_link)] 
                 ]
             )
