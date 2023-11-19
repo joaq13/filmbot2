@@ -145,7 +145,7 @@ async def channel_receive_handler(bot, broadcast):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("🖥ONLINE (Navegador)", url=stream_link),
-                     InlineKeyboardButton('DESCARGA📥', url=online_link)] 
+                     InlineKeyboardButton('DESCARGA📥', url=online_link)]
                 ]
             )
         )
