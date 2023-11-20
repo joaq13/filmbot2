@@ -99,7 +99,7 @@ async def private_receive_handler(c: Client, m: Message):
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
        
-        msg_text ="""<i><u>Link Generado !</u></i>\n\n<b>📂 ARCHIVO :</b> <i>{}</i>\n\n<b>📦 TAMAÑO :</b> <i>{}</i>\n\n<b>📥 DESCARGA :</b> <b>http://ouo.io/qs/Ckivdltb?s=</><i>{}</i>\n\n<b>🖥 ONLINE (Navegador) :</b> <i>{}</i>\n\n<b>🚸 NOTA : PARA ABRIR CON REPRODUCTOR ELEGIR ENLACE DE DESCARGA, (VLC,MxPlayer...)</b>"""
+        msg_text ="""<i><u>Link Generado !</u></i>\n\n<b>📂 ARCHIVO :</b> <i>{}</i>\n\n<b>📦 TAMAÑO :</b> <i>{}</i>\n\n<b>📥 DESCARGA :</b> <b>http://ouo.io/qs/Ckivdltb?s=</b><i>{}</i>\n\n<b>🖥 ONLINE (Navegador) :</b> <i>{}</i>\n\n<b>🚸 NOTA : PARA ABRIR CON REPRODUCTOR ELEGIR ENLACE DE DESCARGA, (VLC,MxPlayer...)</b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True,  quote=True)
         await m.reply_text(
