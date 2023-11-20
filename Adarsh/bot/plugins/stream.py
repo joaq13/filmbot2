@@ -106,7 +106,7 @@ async def private_receive_handler(c: Client, m: Message):
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ONLINE (Navegador)🖥", url=stream_link), #Stream Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ONLINE (Navegador)🖥", url=https://urlshortx.in/api?api=4b4714921d7c1ac73c07a852f0220d42b44357ac&url=,url=stream_link), #Stream Link
                                                 InlineKeyboardButton('DESCARGA 📥', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
