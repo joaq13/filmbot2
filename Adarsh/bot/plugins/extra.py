@@ -13,16 +13,16 @@ START_TEXT = """ Tu Telegram DC es : `{}`  """
 @StreamBot.on_message(filters.regex("maintainers😎"))
 async def maintainers(b,m):
     try:
-       await b.send_message(chat_id=m.chat.id,text="HOLA",quote=True)
+       await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Estoy hecho por [La Butaca Roja](https://telegra.ph/file/9795b89ef2ec7eea11096.jpg)",
+                    text="I am Made By [LazyDeveloper](https://t.me/mRiderDM)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Propietario💻", url=f"https://telegra.ph/file/9795b89ef2ec7eea11096.jpg")
+                                InlineKeyboardButton("Owner💻", url=f"https://t.me/mRiderDM")
                             ]
                         ]
                     ),
