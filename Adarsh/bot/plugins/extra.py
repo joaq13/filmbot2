@@ -30,19 +30,19 @@ async def maintainers(b,m):
                     disable_web_page_preview=True)
             
          
-@StreamBot.on_message(filters.regex("Subscribe ❤️"))
+@StreamBot.on_message(filters.regex("Apoyanos ❤️"))
 async def follow_user(b,m):
     try:
-       await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
+       await b.send_message(chat_id=m.chat.id,text="HOLA",quote=True)
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="<B>HERE'S THE SUBSCRIBE LINK</B>",
+                    text="<B>APOYANOS DESDE EL LINK</B>",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Subscribe ❤️", url=f"https://youtube.com/")
+                                InlineKeyboardButton("Apoyanos ❤️", url=f"http://urlshortx.in/LogoLBR")
                             ]
                         ]
                     ),
